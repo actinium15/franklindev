@@ -401,6 +401,7 @@ export function createOptimizedPicture(src, alt = '', eager = false, breakpoints
   const { pathname } = url;
   const ext = pathname.substring(pathname.lastIndexOf('.') + 1);
 
+  /*
   // webp
   breakpoints.forEach((br) => {
     const source = document.createElement('source');
@@ -409,6 +410,7 @@ export function createOptimizedPicture(src, alt = '', eager = false, breakpoints
     source.setAttribute('srcset', `${pathname}?width=${br.width}&format=webply&optimize=medium`);
     picture.appendChild(source);
   });
+  */
 
   // fallback
   breakpoints.forEach((br, i) => {
